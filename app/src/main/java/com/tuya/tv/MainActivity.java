@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import androidx.fragment.app.FragmentActivity;
 
-import com.tuya.tv.my.MyGridFragment;
 import com.tuya.tv.my.MyMainFragment;
 
 /*
@@ -18,7 +17,7 @@ public class MainActivity extends FragmentActivity {
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.main_browse_fragment, new MyGridFragment())
+                    .replace(R.id.main_browse_fragment, new MyMainFragment())
                     .commitNow();
         }
     }

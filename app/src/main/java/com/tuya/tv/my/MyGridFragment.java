@@ -34,8 +34,6 @@ public class MyGridFragment extends RowsSupportFragment {
         List<Movie> list = MovieList.setupMovies();
 
         ListRowPresenter listRowPresenter = new ListRowPresenter();
-        listRowPresenter.setNumRows(2);
-
         mainAdapter = new ArrayObjectAdapter(listRowPresenter);
 
         int i;
